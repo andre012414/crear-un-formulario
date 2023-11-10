@@ -1,0 +1,156 @@
+<html>
+        <head>
+  
+        </head>
+        
+        <body>
+        
+        <!--formulario basico (ejemplo sacado de https://www.htmlquick.com/es/tutorials/forms/4.html)-->
+        <form action="https://chrome.google.com/webstore/category/extensions?hl=es" target="_blank">
+            <p> nombre <input type="text" name="nombre"></p>
+
+            <p> direccion de correo: <input type="text" name="correo"></p>
+
+            <p> tu mensaje <br>
+                <textarea name="mensaje"></textarea>
+            </p>
+            <p>quieres que te mandemos info por email?
+            <select name="envioemail">
+                <option value="si">si
+				<option value="no">no
+			</select
+			</p>
+			 <input type="color" name="micolor"><br>
+			<input type="date" name="fecnac"><br>
+			<input type="email" name="correo"><br>
+			<input type="month" name="mes"><br>
+			<input type="number"
+    name="cantidad" min="1" max="50"> <br> 
+    rango: <input type="range" name="rango" min="1" max="20"><br>
+			<input type="submit" value="enviar mensaje">
+			<p>Los campos obligatorios se marcan con un <abbr title="required">*</abbr>.</p>
+
+<!-- Así que esto: -->
+<div>
+  <label for="username">Nombre:</label>
+  <input type="text" name="username" />
+  <label for="username"
+    ><abbr title="required" aria-label="required">*</abbr></label
+  >
+</div>
+
+<!-- sería mejor hacerlo así: -->
+<div>
+  <label for="username">
+    <span>Nombre:</span>
+    <input id="username" type="text" name="username" />
+    <abbr title="required" aria-label="required">*</abbr>
+  </label>
+</div>
+
+<!-- Pero probablemente lo mejor es esto: -->
+<div>
+  <label for="username"
+    >Nombre: <abbr title="required" aria-label="required">*</abbr></label
+  >
+  <input id="username" type="text" name="username" />
+</div>
+<section>
+  <h2>Información de pago</h2>
+  <p>
+    <label for="card">
+      <span>Tipo de tarjeta:</span>
+    </label>
+    <select id="card" name="usercard">
+      <option value="visa">Visa</option>
+      <option value="mc">Mastercard</option>
+      <option value="amex">American Express</option>
+    </select>
+  </p>
+  <p>
+    <label for="number">
+      <span>Número de tarjeta:</span>
+      <strong><abbr title="required">*</abbr></strong>
+    </label>
+    <input type="tel" id="number" name="cardnumber" />
+  </p>
+  <p>
+    <label for="date">
+      <span>Fecha de caducidad:</span>
+      <strong><abbr title="required">*</abbr></strong>
+      <em>el formato mm/aa</em>
+    </label>
+    <input type="date" id="date" name="expiration" />
+  </p>
+</section>
+<form>
+  <p>
+    <label for="search">search: </label>
+    <input id="search" name="search" type="search" />
+  </p>
+  <p>
+    <label for="text">texto: </label>
+    <input id="text" name="text" type="text" />
+  </p>
+  <p>
+    <label for="date">dia: </label>
+    <input id="date" name="date" type="datetime-local" />
+  </p>
+  <p>
+    <label for="radio">radio: </label>
+    <input id="radio" name="radio" type="radio" />
+  </p>
+  <p>
+    <label for="checkbox">checkbox: </label>
+    <input id="checkbox" name="checkbox" type="checkbox" />
+  </p>
+  <p><input type="submit" value="submit" /></p>
+  <p><input type="button" value="button" /></p>
+</form>
+<form>
+  <fieldset>
+    <legend>donde vives</legend>
+
+    <p>
+      <label>
+        <input type="checkbox" name="fruit" value="cherry" />
+        misma cuidad
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="fruit" value="banana" disabled />
+        otra ciudad
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="fruit" value="strawberry" />
+        otro pais
+      </label>
+    </p>
+  </fieldset>
+</form>
+<form>
+  <h1>to: Mozilla</h1>
+
+  <div id="from">
+    <label for="name">from:</label>
+    <input type="text" id="name" name="user_name" />
+  </div>
+
+  <div id="reply">
+    <label for="mail">reply:</label>
+    <input type="email" id="mail" name="user_email" />
+  </div>
+
+  <div id="message">
+    <label for="msg">Your message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+
+ 
+		</form>
+		</body>
+	</html>
+	
